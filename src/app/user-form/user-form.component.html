@@ -1,1 +1,38 @@
 <p>user-form works!</p>
+<h2>User Form</h2>
+<form>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="user.name" name="name" required>
+  </div>
+
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" [(ngModel)]="user.dob" name="dob" required>
+  </div>
+
+  <div>
+    <label for="gender">Gender:</label>
+    <select id="gender" [(ngModel)]="user.gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="service">Type of Service:</label>
+    <select id="service" [(ngModel)]="user.service" name="service" required>
+      <option value="service1">Service 1</option>
+      <option value="service2">Service 2</option>
+      <option value="service3">Service 3</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" [(ngModel)]="user.comment" name="comment" rows="4" cols="50"></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

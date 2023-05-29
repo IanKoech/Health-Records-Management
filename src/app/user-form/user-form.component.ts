@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent {
-
+  user = {
+    name: '',
+    dob: '',
+    gender: '',
+    service: '',
+    comment: ''
+  };
 }
