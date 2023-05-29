@@ -1,4 +1,21 @@
 <h2>User Data</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Visits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patients" [appMostVisits]="patient.visits">
+      <td>{{ patient.name }}</td>
+      <td>{{ patient.visits }}</td>
+    </tr>
+  </tbody>
+</table>
+
 <form>
   <div>
     <label for="name">Name:</label>

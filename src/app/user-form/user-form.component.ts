@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class UserFormComponent {
   user = {
     name: '',
-    dob: '',
+    dob:  '',
     gender: '',
     service: '',
     comment: ''
